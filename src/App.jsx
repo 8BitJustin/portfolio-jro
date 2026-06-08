@@ -122,9 +122,9 @@ export default function Portfolio() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <div style={{ fontFamily: "'Syne', 'DM Sans', sans-serif", background: "#111315", color: "#E8EAF0", minHeight: "100vh" }}>
+    <div style={{ fontFamily: "'Roboto', sans-serif", background: "#111315", color: "#E8EAF0", minHeight: "100vh" }}>
       <style>{`
-        @import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
         * { box-sizing: border-box; margin: 0; padding: 0; }
         html { scroll-behavior: smooth; }
         body { background: #111315; }
@@ -134,7 +134,7 @@ export default function Portfolio() {
         ::-webkit-scrollbar-thumb { background: #4AB3E8; border-radius: 2px; }
 
         .nav-link {
-          font-family: 'DM Sans', sans-serif;
+          font-family: 'Roboto', sans-serif;
           font-size: 13px;
           font-weight: 500;
           letter-spacing: 0.08em;
@@ -152,7 +152,7 @@ export default function Portfolio() {
 
         .section { padding: 100px 0; max-width: 1100px; margin: 0 auto; padding-left: 40px; padding-right: 40px; }
         .section-label {
-          font-family: 'DM Sans', sans-serif;
+          font-family: 'Roboto', sans-serif;
           font-size: 11px;
           letter-spacing: 0.2em;
           text-transform: uppercase;
@@ -171,7 +171,7 @@ export default function Portfolio() {
           opacity: 0.4;
         }
         .section-title {
-          font-family: 'Syne', sans-serif;
+          font-family: 'Roboto', sans-serif;
           font-size: clamp(32px, 5vw, 48px);
           font-weight: 700;
           color: #E8EAF0;
@@ -179,7 +179,7 @@ export default function Portfolio() {
           margin-bottom: 16px;
         }
         .section-sub {
-          font-family: 'DM Sans', sans-serif;
+          font-family: 'Roboto', sans-serif;
           font-size: 17px;
           font-weight: 300;
           color: #8892a0;
@@ -197,7 +197,7 @@ export default function Portfolio() {
         }
         .skill-card:hover { border-color: #4AB3E8; transform: translateY(-2px); }
         .skill-category {
-          font-family: 'Syne', sans-serif;
+          font-family: 'Roboto', sans-serif;
           font-size: 13px;
           font-weight: 600;
           letter-spacing: 0.1em;
@@ -207,7 +207,7 @@ export default function Portfolio() {
         }
         .skill-tag {
           display: inline-block;
-          font-family: 'DM Sans', sans-serif;
+          font-family: 'Roboto', sans-serif;
           font-size: 13px;
           font-weight: 400;
           color: #c4cad4;
@@ -233,27 +233,27 @@ export default function Portfolio() {
           flex-shrink: 0;
         }
         .cert-date {
-          font-family: 'DM Sans', sans-serif;
+          font-family: 'Roboto', sans-serif;
           font-size: 12px;
           color: #8892a0;
           min-width: 90px;
           padding-top: 2px;
         }
         .cert-name {
-          font-family: 'Syne', sans-serif;
+          font-family: 'Roboto', sans-serif;
           font-size: 16px;
           font-weight: 600;
           color: #E8EAF0;
           margin-bottom: 4px;
         }
         .cert-desc {
-          font-family: 'DM Sans', sans-serif;
+          font-family: 'Roboto', sans-serif;
           font-size: 14px;
           color: #8892a0;
           line-height: 1.5;
         }
         .cert-badge {
-          font-family: 'DM Sans', sans-serif;
+          font-family: 'Roboto', sans-serif;
           font-size: 11px;
           font-weight: 500;
           letter-spacing: 0.08em;
@@ -278,13 +278,13 @@ export default function Portfolio() {
         .project-card:hover { border-color: #4AB3E8; transform: translateY(-4px); }
         .project-icon { font-size: 32px; }
         .project-title {
-          font-family: 'Syne', sans-serif;
+          font-family: 'Roboto', sans-serif;
           font-size: 20px;
           font-weight: 700;
           color: #E8EAF0;
         }
         .project-desc {
-          font-family: 'DM Sans', sans-serif;
+          font-family: 'Roboto', sans-serif;
           font-size: 15px;
           color: #8892a0;
           line-height: 1.7;
@@ -296,7 +296,7 @@ export default function Portfolio() {
           gap: 8px;
         }
         .tech-tag {
-          font-family: 'DM Sans', sans-serif;
+          font-family: 'Roboto', sans-serif;
           font-size: 12px;
           color: #4AB3E8;
           background: rgba(74, 179, 232, 0.08);
@@ -305,7 +305,7 @@ export default function Portfolio() {
           padding: 3px 10px;
         }
         .project-link {
-          font-family: 'DM Sans', sans-serif;
+          font-family: 'Roboto', sans-serif;
           font-size: 13px;
           font-weight: 500;
           color: #4AB3E8;
@@ -368,7 +368,7 @@ export default function Portfolio() {
           padding-top: 2px;
         }
         .career-timeframe {
-          font-family: 'DM Sans', sans-serif;
+          font-family: 'Roboto', sans-serif;
           font-size: 11px;
           letter-spacing: 0.15em;
           text-transform: uppercase;
@@ -376,14 +376,14 @@ export default function Portfolio() {
           margin-bottom: 6px;
         }
         .career-title-text {
-          font-family: 'Syne', sans-serif;
+          font-family: 'Roboto', sans-serif;
           font-size: 20px;
           font-weight: 700;
           color: #E8EAF0;
           margin-bottom: 8px;
         }
         .career-desc {
-          font-family: 'DM Sans', sans-serif;
+          font-family: 'Roboto', sans-serif;
           font-size: 15px;
           color: #8892a0;
           line-height: 1.6;
@@ -391,7 +391,7 @@ export default function Portfolio() {
         }
         .career-certs { display: flex; flex-wrap: wrap; gap: 8px; }
         .career-cert-tag {
-          font-family: 'DM Sans', sans-serif;
+          font-family: 'Roboto', sans-serif;
           font-size: 12px;
           color: #c4cad4;
           background: #252a30;
@@ -400,7 +400,7 @@ export default function Portfolio() {
         }
 
         .btn-primary {
-          font-family: 'Syne', sans-serif;
+          font-family: 'Roboto', sans-serif;
           font-size: 14px;
           font-weight: 600;
           letter-spacing: 0.05em;
@@ -420,7 +420,7 @@ export default function Portfolio() {
         .btn-primary:hover { background: #7dcaf0; transform: translateY(-1px); }
 
         .btn-secondary {
-          font-family: 'Syne', sans-serif;
+          font-family: 'Roboto', sans-serif;
           font-size: 14px;
           font-weight: 600;
           letter-spacing: 0.05em;
@@ -447,7 +447,7 @@ export default function Portfolio() {
           border: 1px solid #252a30;
           border-radius: 12px;
           padding: 20px 28px;
-          font-family: 'DM Sans', sans-serif;
+          font-family: 'Roboto', sans-serif;
           transition: border-color 0.2s, transform 0.2s;
           text-decoration: none;
           color: inherit;
@@ -500,12 +500,12 @@ export default function Portfolio() {
               background: "rgba(74, 179, 232, 0.12)",
               border: "1px solid rgba(74, 179, 232, 0.3)",
               display: "flex", alignItems: "center", justifyContent: "center",
-              fontFamily: "'Syne', sans-serif",
+              fontFamily: "'Roboto', sans-serif",
               fontWeight: 800, fontSize: 14,
               color: "#4AB3E8",
               letterSpacing: "0.02em",
             }}>JO</div>
-            <span style={{ fontFamily: "'Syne', sans-serif", fontWeight: 700, fontSize: 16, color: "#E8EAF0", letterSpacing: "0.02em" }}>Justin Olson</span>
+            <span style={{ fontFamily: "'Roboto', sans-serif", fontWeight: 700, fontSize: 16, color: "#E8EAF0", letterSpacing: "0.02em" }}>Justin Olson</span>
           </div>
 
           <div className="nav-links-desktop" style={{ display: "flex", alignItems: "center", gap: 32 }}>
@@ -542,7 +542,7 @@ export default function Portfolio() {
       <section id="hero" style={{ paddingTop: 140, paddingBottom: 100, maxWidth: 1100, margin: "0 auto", padding: "140px 40px 100px" }}>
         <div className="fade-up fade-up-1" style={{ marginBottom: 20 }}>
           <span style={{
-            fontFamily: "'DM Sans', sans-serif", fontSize: 12,
+            fontFamily: "'Roboto', sans-serif", fontSize: 12,
             letterSpacing: "0.2em", textTransform: "uppercase",
             color: "#4AB3E8", display: "inline-flex", alignItems: "center", gap: 8,
           }}>
@@ -552,7 +552,7 @@ export default function Portfolio() {
         </div>
 
         <h1 className="fade-up fade-up-2" style={{
-          fontFamily: "'Syne', sans-serif",
+          fontFamily: "'Roboto', sans-serif",
           fontSize: "clamp(48px, 8vw, 88px)",
           fontWeight: 800,
           lineHeight: 1.0,
@@ -565,7 +565,7 @@ export default function Portfolio() {
         </h1>
 
         <p className="fade-up fade-up-3" style={{
-          fontFamily: "'DM Sans', sans-serif",
+          fontFamily: "'Roboto', sans-serif",
           fontSize: 19,
           fontWeight: 300,
           color: "#8892a0",
@@ -593,8 +593,8 @@ export default function Portfolio() {
             { value: "∞", label: "Problems Solved" },
           ].map(({ value, label }) => (
             <div key={label}>
-              <div style={{ fontFamily: "'Syne', sans-serif", fontSize: 36, fontWeight: 800, color: "#E8EAF0" }}>{value}</div>
-              <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 13, color: "#8892a0", marginTop: 4 }}>{label}</div>
+              <div style={{ fontFamily: "'Roboto', sans-serif", fontSize: 36, fontWeight: 800, color: "#E8EAF0" }}>{value}</div>
+              <div style={{ fontFamily: "'Roboto', sans-serif", fontSize: 13, color: "#8892a0", marginTop: 4 }}>{label}</div>
             </div>
           ))}
         </div>
@@ -680,7 +680,7 @@ export default function Portfolio() {
                   View Live <span>→</span>
                 </a>
               ) : (
-                <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 13, color: "#3a4049", fontStyle: "italic" }}>Internal / Production Tool</span>
+                <span style={{ fontFamily: "'Roboto', sans-serif", fontSize: 13, color: "#3a4049", fontStyle: "italic" }}>Internal / Production Tool</span>
               )}
             </div>
           ))}
@@ -708,7 +708,7 @@ export default function Portfolio() {
                   {step.title}
                   {step.current && (
                     <span style={{
-                      fontFamily: "'DM Sans', sans-serif", fontSize: 11,
+                      fontFamily: "'Roboto', sans-serif", fontSize: 11,
                       fontWeight: 500, letterSpacing: "0.1em", textTransform: "uppercase",
                       color: "#4AB3E8", background: "rgba(74, 179, 232, 0.12)",
                       border: "1px solid rgba(74, 179, 232, 0.2)",
@@ -765,16 +765,16 @@ export default function Portfolio() {
           </a>
         </div>
 
-        <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 13, color: "#3a4049", marginTop: 24 }}>
+        <p style={{ fontFamily: "'Roboto', sans-serif", fontSize: 13, color: "#3a4049", marginTop: 24 }}>
           References available upon request.
         </p>
       </section>
 
       {/* FOOTER */}
       <div style={{ borderTop: "1px solid #1e2228", padding: "32px 40px", display: "flex", justifyContent: "space-between", alignItems: "center", maxWidth: 1100, margin: "0 auto", flexWrap: "wrap", gap: 12 }}>
-        <span style={{ fontFamily: "'Syne', sans-serif", fontWeight: 700, fontSize: 14, color: "#8892a0" }}>Justin Olson</span>
-        <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 13, color: "#3a4049" }}>Systems Administrator · Data Protection · Security</span>
-        <span style={{ fontFamily: "'DM Sans', sans-serif", fontSize: 13, color: "#3a4049" }}>Melissa, TX</span>
+        <span style={{ fontFamily: "'Roboto', sans-serif", fontWeight: 700, fontSize: 14, color: "#8892a0" }}>Justin Olson</span>
+        <span style={{ fontFamily: "'Roboto', sans-serif", fontSize: 13, color: "#3a4049" }}>Systems Administrator · Data Protection · Security</span>
+        <span style={{ fontFamily: "'Roboto', sans-serif", fontSize: 13, color: "#3a4049" }}>Melissa, TX</span>
       </div>
     </div>
   );
