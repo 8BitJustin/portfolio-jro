@@ -277,6 +277,7 @@ export default function Portfolio() {
           margin-bottom: 16px;
           display: flex;
           align-items: center;
+          justify-content: space-between;
           gap: 12px;
           flex-wrap: wrap;
         }
@@ -291,15 +292,6 @@ export default function Portfolio() {
           position: relative;
           margin-bottom: 8px;
         }
-        .exp-bullet::before {
-          content: '—';
-          position: absolute;
-          left: 0;
-          color: #4AB3E8;
-          font-size: 11px;
-          top: 3px;
-        }
-
         .cert-item {
           display: flex;
           gap: 16px;
@@ -578,7 +570,6 @@ export default function Portfolio() {
             letterSpacing: "0.2em", textTransform: "uppercase",
             color: "#4AB3E8", display: "inline-flex", alignItems: "center", gap: 10,
           }}>
-            <span style={{ width: 24, height: 1, background: "#4AB3E8", display: "inline-block" }}></span>
             Systems Administrator · Data Protection Specialist
           </span>
         </div>
@@ -592,7 +583,7 @@ export default function Portfolio() {
           color: "#E8EAF0",
           marginBottom: 28,
         }}>
-          Justin<br />
+          Justin{" "}
           <span style={{ color: "#4AB3E8" }}>Olson.</span>
         </h1>
 
