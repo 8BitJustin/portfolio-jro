@@ -6,6 +6,29 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 ---
 
+## [2.0.0] - 2026-06-08
+
+### Added
+- Experience section with all five roles (System Administrator, Service Delivery
+  Manager, Rubrik Administrator, Deskside Support Technician, QA Automation Engineer)
+- Imaging Station added to Projects section
+- Current Focus section replacing Career Roadmap — five active development areas
+  (Linux Administration, Python Automation, Azure Infrastructure, Enterprise Backup
+  Engineering, Security Operations)
+- Linux+ added to Certifications as In Progress
+- Full mobile responsiveness across all sections and grids
+
+### Changed
+- Navigation restructured: About, Experience, Skills, Projects, Certifications,
+  Current Focus, Contact
+- Hero section: removed stat metrics block, centered layout corrected
+- All section eyebrow labels removed (e.g. "The Long Game", "Built Things")
+- Career Roadmap removed in favor of Current Focus
+
+### Removed
+- Cert sprint / enterprise environment / problems solved stat counters from hero
+- Career Roadmap / long-term progression section
+
 ## [1.0.1] - 2026-06-07
 
 ### Changed
