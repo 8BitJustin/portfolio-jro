@@ -755,7 +755,7 @@ export default function Portfolio() {
         <h2 className="section-title">Contact</h2>
         <p className="section-sub" style={{display: 'inline-flex', alignItems: 'center' }}>Open to data protection, security, and systems administration opportunities. Actively pursuing roles in the Dallas–Fort Worth metro and remote positions nationally.</p>
 
-        <div className="contact-grid" style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))", gap: 14, maxWidth: 700, marginBottom: 44 }}>
+        <div className="contact-grid" style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 14, marginBottom: 44 }}>
           <div className="contact-chip">
             <span className="contact-chip-icon">💼</span>
             <div>
@@ -767,7 +767,7 @@ export default function Portfolio() {
             <span className="contact-chip-icon">🐙</span>
             <div>
               <div className="contact-chip-label">GitHub</div>
-              <div className="contact-chip-value">github.com/[handle]</div>
+              <div className="contact-chip-value">github.com/8bitjustin</div>
             </div>
           </div>
           <div className="contact-chip">
