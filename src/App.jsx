@@ -110,7 +110,7 @@ const PROJECTS = [
   {
     title: "Imaging Station Build",
     tech: ["Hardware", "Physical Infrastructure", "Process Improvement"],
-    desc: "Identified laptops queued for reimaging scattered across desks with no organization. Sourced spare shelving and ethernet cable, proposed the build to management, and constructed a 5-shelf imaging station capable of holding up to 12 laptops simultaneously. Cleared desk space, improved workflow efficiency, and directly enabled the team to bring on an additional technician.",
+    desc: "Built and implemented a dedicated imaging rack after identifying decentralized laptop reimaging across multiple cubicles. Proposed solution to management, sourced shelving from warehouse, and constructed a structured 5-shelf station capable of handling 10–12 laptops simultaneously. Standardized cabling by measuring and terminating Ethernet runs to eliminate clutter, improving workspace organization, freeing up a desk, and enabling onboarding of an additional technician.",
     link: null,
     icon: "🖥️",
   },
@@ -618,7 +618,7 @@ export default function Portfolio() {
       <section id="experience" className="section">
         <div className="section-title-line" />
         <h2 className="section-title">Experience</h2>
-        <p className="section-sub" style={{ display: 'inline-flex', alignItems: 'center' }}>A track record built across enterprise IT operations, data protection, and infrastructure support — with consistent growth in scope and responsibility.</p>
+        <p className="section-sub" style={{ display: 'inline-flex', alignItems: 'center' }}>A track record built across enterprise IT operations, data protection, and infrastructure support, with consistent growth in scope and responsibility.</p>
 
         {EXPERIENCE.map((job) => (
           <div key={job.title} className="exp-card">
@@ -661,7 +661,7 @@ export default function Portfolio() {
       <section id="projects" className="section">
         <div className="section-title-line" />
         <h2 className="section-title">Projects</h2>
-        <p className="section-sub" style={{display: 'inline-flex', alignItems: 'center' }}>Tools built for real purposes — managing an active job search, prepping for certifications, automating operational workflows, and solving physical logistics problems.</p>
+        <p className="section-sub" style={{display: 'inline-flex', alignItems: 'center' }}>Tools built for real purposes, managing an active job search, prepping for certifications, automating operational workflows, and solving physical logistics problems.</p>
 
         <div className="projects-grid" style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(290px, 1fr))", gap: 22 }}>
           {PROJECTS.map((p) => (
@@ -686,7 +686,7 @@ export default function Portfolio() {
       <section id="certifications" className="section">
         <div className="section-title-line" />
         <h2 className="section-title">Certifications</h2>
-        <p className="section-sub" style={{display: 'inline-flex', alignItems: 'center' }}>Five certifications earned in 15 months. The roadmap continues into cloud security, Linux administration, and Python automation.</p>
+        <p className="section-sub" style={{display: 'inline-flex', alignItems: 'center' }}>Five certifications earned in 15 months. The journey continues into cloud security, Linux administration, and Python automation.</p>
 
         <div className="cert-grid" style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(420px, 1fr))", gap: "0 52px" }}>
           {CERTS.map((cert) => (
@@ -724,7 +724,7 @@ export default function Portfolio() {
       <section id="focus" className="section">
         <div className="section-title-line" />
         <h2 className="section-title">Current Focus</h2>
-        <p className="section-sub" style={{display: 'inline-flex', alignItems: 'center' }}>Active development areas — where time and energy are going right now to build deeper, more specialized expertise.</p>
+        <p className="section-sub" style={{display: 'inline-flex', alignItems: 'center' }}>Active development areas, where time and energy are going right now to build deeper, more specialized expertise.</p>
 
         <div className="focus-grid" style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(290px, 1fr))", gap: 18 }}>
           {FOCUS_AREAS.map((f) => (
@@ -745,7 +745,7 @@ export default function Portfolio() {
       <section id="contact" className="section" style={{ paddingBottom: 110 }}>
         <div className="section-title-line" />
         <h2 className="section-title">Contact</h2>
-        <p className="section-sub" style={{display: 'inline-flex', alignItems: 'center' }}>Open to data protection, security, and systems administration opportunities. Actively pursuing roles in the Dallas–Fort Worth metro and remote positions nationally.</p>
+        <p className="section-sub" style={{display: 'inline-flex', alignItems: 'center' }}>Open to data protection, security, and systems administration opportunities. Actively pursuing roles in the northern Dallas–Fort Worth metro and remote positions nationally.</p>
 
         <div className="contact-grid" style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 14, marginBottom: 44 }}>
           <div className="contact-chip">
