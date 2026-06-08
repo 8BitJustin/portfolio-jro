@@ -604,11 +604,13 @@ export default function Portfolio() {
           lineHeight: 1.75,
           maxWidth: 620,
           marginBottom: 40,
+          display: 'inline-flex',
+          alignItems: 'center'
         }}>
           System Administrator supporting enterprise backup and recovery operations across Fortune 100 aerospace and defense environments. Experienced in Rubrik, VMware, ServiceNow, SLA management, and infrastructure operations. Earned A+, Network+, CCNA, RCSA, and Security+ certifications while progressing from Deskside Support to System Administrator in under two years.
         </p>
 
-        <div className="fade-up fade-up-4 hero-btns" style={{ display: "flex", gap: 14, flexWrap: "wrap" }}>
+        <div className="fade-up fade-up-4 hero-btns" style={{ display: "flex", gap: 14, flexWrap: "wrap", justifyContent: "center" }}>
           <button className="btn-primary" onClick={() => scrollTo("experience")}>
             View Experience →
           </button>
@@ -624,7 +626,7 @@ export default function Portfolio() {
       <section id="experience" className="section">
         <div className="section-title-line" />
         <h2 className="section-title">Experience</h2>
-        <p className="section-sub">A track record built across enterprise IT operations, data protection, and infrastructure support — with consistent growth in scope and responsibility.</p>
+        <p className="section-sub" style={{ display: 'inline-flex', alignItems: 'center' }}>A track record built across enterprise IT operations, data protection, and infrastructure support — with consistent growth in scope and responsibility.</p>
 
         {EXPERIENCE.map((job) => (
           <div key={job.title} className="exp-card">
@@ -649,7 +651,7 @@ export default function Portfolio() {
       <section id="skills" className="section">
         <div className="section-title-line" />
         <h2 className="section-title">Skills & Expertise</h2>
-        <p className="section-sub">Built through hands-on enterprise work, certification study, and self-directed lab practice across infrastructure and security domains.</p>
+        <p className="section-sub" style={ {display: 'inline-flex', alignItems: 'center' }}>Built through hands-on enterprise work, certification study, and self-directed lab practice across infrastructure and security domains.</p>
 
         <div className="skills-grid" style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(290px, 1fr))", gap: 18 }}>
           {SKILLS.map(({ category, items }) => (
@@ -667,7 +669,7 @@ export default function Portfolio() {
       <section id="projects" className="section">
         <div className="section-title-line" />
         <h2 className="section-title">Projects</h2>
-        <p className="section-sub">Tools built for real purposes — managing an active job search, prepping for certifications, automating operational workflows, and solving physical logistics problems.</p>
+        <p className="section-sub" style={{display: 'inline-flex', alignItems: 'center' }}>Tools built for real purposes — managing an active job search, prepping for certifications, automating operational workflows, and solving physical logistics problems.</p>
 
         <div className="projects-grid" style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(290px, 1fr))", gap: 22 }}>
           {PROJECTS.map((p) => (
@@ -692,7 +694,7 @@ export default function Portfolio() {
       <section id="certifications" className="section">
         <div className="section-title-line" />
         <h2 className="section-title">Certifications</h2>
-        <p className="section-sub">Five certifications earned in 15 months. The roadmap continues into cloud security, Linux administration, and Python automation.</p>
+        <p className="section-sub" style={{display: 'inline-flex', alignItems: 'center' }}>Five certifications earned in 15 months. The roadmap continues into cloud security, Linux administration, and Python automation.</p>
 
         <div className="cert-grid" style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(420px, 1fr))", gap: "0 52px" }}>
           {CERTS.map((cert) => (
@@ -730,7 +732,7 @@ export default function Portfolio() {
       <section id="focus" className="section">
         <div className="section-title-line" />
         <h2 className="section-title">Current Focus</h2>
-        <p className="section-sub">Active development areas — where time and energy are going right now to build deeper, more specialized expertise.</p>
+        <p className="section-sub" style={{display: 'inline-flex', alignItems: 'center' }}>Active development areas — where time and energy are going right now to build deeper, more specialized expertise.</p>
 
         <div className="focus-grid" style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(290px, 1fr))", gap: 18 }}>
           {FOCUS_AREAS.map((f) => (
@@ -751,7 +753,7 @@ export default function Portfolio() {
       <section id="contact" className="section" style={{ paddingBottom: 110 }}>
         <div className="section-title-line" />
         <h2 className="section-title">Contact</h2>
-        <p className="section-sub">Open to data protection, security, and systems administration opportunities. Actively pursuing roles in the Dallas–Fort Worth metro and remote positions nationally.</p>
+        <p className="section-sub" style={{display: 'inline-flex', alignItems: 'center' }}>Open to data protection, security, and systems administration opportunities. Actively pursuing roles in the Dallas–Fort Worth metro and remote positions nationally.</p>
 
         <div className="contact-grid" style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))", gap: 14, maxWidth: 700, marginBottom: 44 }}>
           <div className="contact-chip">
@@ -777,7 +779,7 @@ export default function Portfolio() {
           </div>
         </div>
 
-        <div style={{ display: "flex", gap: 14, flexWrap: "wrap" }}>
+        <div style={{ display: "flex", justifyContent: "center", gap: 14, flexWrap: "wrap" }}>
           <a className="btn-primary" href="#" style={{ textDecoration: "none" }}>
             Download Resume ↓
           </a>
