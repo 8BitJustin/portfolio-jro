@@ -1,16 +1,98 @@
-# React + Vite
+# Justin Olson — Personal Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Personal portfolio website for Justin Olson — U.S. Air Force veteran, Systems Administrator, and data protection specialist transitioning into cybersecurity engineering.
 
-Currently, two official plugins are available:
+Built with React and deployed on Vercel.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## Live Site
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+> _Add your Vercel URL here once deployed_
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Overview
+
+A single-page portfolio with smooth scroll navigation covering:
+
+- **Hero** — bio, role, and quick stats
+- **Skills** — categorized competency grid across data protection, systems, security, networking, scripting, and cloud
+- **Certifications Timeline** — earned, in-progress, and planned credentials with status badges
+- **Projects** — live tools and production automation work with tech stack details
+- **Career Roadmap** — long-range progression from Data Protection Analyst to Security Architect / CISO track
+- **Contact** — LinkedIn, GitHub, location, and resume download
+
+---
+
+## Tech Stack
+
+- [React](https://react.dev/) — component structure and state
+- [Vercel](https://vercel.com/) — deployment
+- [Google Fonts](https://fonts.google.com/) — Syne (display) + DM Sans (body)
+- Vanilla CSS via inline styles and a scoped `<style>` block — no CSS framework
+
+---
+
+## Getting Started
+
+```bash
+# Install dependencies
+npm install
+
+# Start local dev server
+npm run dev
+
+# Build for production
+npm run build
+```
+
+---
+
+## Project Structure
+
+```
+/
+├── src/
+│   └── portfolio.jsx    # Main single-page component
+├── public/
+│   └── resume.pdf       # Resume file for download link (add your own)
+├── CHANGELOG.md
+└── README.md
+```
+
+---
+
+## Customization
+
+Key data arrays are defined at the top of `portfolio.jsx` and easy to update:
+
+| Constant | Controls |
+|---|---|
+| `NAV_LINKS` | Navigation items and section IDs |
+| `SKILLS` | Skill category cards and tag items |
+| `CERTS` | Certification timeline entries and status |
+| `PROJECTS` | Project cards, tech tags, and links |
+| `CAREER_STEPS` | Career roadmap nodes and cert milestones |
+
+---
+
+## Design
+
+- Color palette: charcoal (`#111315`) base with ice-blue (`#4AB3E8`) accents
+- Amber (`#e8a44a`) used for in-progress cert badges
+- Sticky navbar with scroll-aware active section indicator
+- Hover lift effects on all cards
+- Responsive — collapses to hamburger menu on mobile
+
+---
+
+## Changelog
+
+See [CHANGELOG.md](./CHANGELOG.md) for version history.
+
+---
+
+## License
+
+Personal portfolio — not intended for template redistribution.
