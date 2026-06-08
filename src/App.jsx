@@ -457,6 +457,7 @@ export default function Portfolio() {
         .contact-chip {
           display: flex;
           align-items: center;
+          justify-content: center;
           gap: 14px;
           background: #1a1d21;
           border: 1px solid #252a30;
