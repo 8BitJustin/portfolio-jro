@@ -456,9 +456,11 @@ export default function Portfolio() {
 
         .contact-chip {
           display: flex;
+          flex-direction: column;
           align-items: center;
           justify-content: center;
-          gap: 14px;
+          text-align: center;
+          gap: 10px;
           background: #1a1d21;
           border: 1px solid #252a30;
           border-radius: 12px;
@@ -748,20 +750,20 @@ export default function Portfolio() {
         <p className="section-sub" style={{display: 'inline-flex', alignItems: 'center' }}>Open to data protection, security, and systems administration opportunities. Actively pursuing roles in the northern Dallas–Fort Worth metro and remote positions nationally.</p>
 
         <div className="contact-grid" style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 14, marginBottom: 44 }}>
-          <div className="contact-chip">
+          <a className="contact-chip" href="https://www.linkedin.com/in/justinolson34/" target="_blank" rel="noreferrer" style={{ textDecoration: "none" }}>
             <span className="contact-chip-icon">💼</span>
             <div>
               <div className="contact-chip-label">LinkedIn</div>
               <div className="contact-chip-value">justinolson34</div>
             </div>
-          </div>
-          <div className="contact-chip">
+          </a>
+          <a className="contact-chip" href="https://github.com/8BitJustin" target="_blank" rel="noreferrer" style={{ textDecoration: "none" }}>
             <span className="contact-chip-icon">🐙</span>
             <div>
               <div className="contact-chip-label">GitHub</div>
-              <div className="contact-chip-value">github.com/8bitjustin</div>
+              <div className="contact-chip-value">8BitJustin</div>
             </div>
-          </div>
+          </a>
           <div className="contact-chip">
             <span className="contact-chip-icon">📍</span>
             <div>
@@ -772,7 +774,7 @@ export default function Portfolio() {
         </div>
 
         <div style={{ display: "flex", justifyContent: "center", gap: 14, flexWrap: "wrap" }}>
-          <a className="btn-primary" href="#" style={{ textDecoration: "none" }}>
+          <a className="btn-primary" href="JRO-052626.pdf" download="JRO-052626.pdf" style={{ textDecoration: "none" }}>
             Download Resume ↓
           </a>
         </div>

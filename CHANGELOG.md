@@ -5,6 +5,14 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
+## [2.0.6] - 2026-06-08
+
+### Changed
+- Contact chips: text and icon centered within each card
+- LinkedIn and GitHub chips now link to their respective profiles
+- GitHub handle updated to 8BitJustin
+- Resume download button wired to /public/resume.pdf
+
 ## [2.0.5] - 2026-06-08
 
 ### Changed
