@@ -82,29 +82,33 @@ const PROJECTS = [
   {
     title: "Job Application Tracker",
     tech: ["React", "Vercel", "localStorage"],
-    desc: "A full-featured job search dashboard built to manage an active application pipeline. Features color-coded age badges, status tracking, and a clean dark interface. Deployed live on Vercel.",
+    desc: "Built during an active job search to solve a real problem: tracking multiple applications across multiple platforms with no reliable system. Features color-coded age badges that visually flag applications going stale, drag-to-reorder prioritization, status tracking from applied through offer, and a clean dark interface designed for daily use. Entirely self-directed from concept to deployment on Vercel.",
     link: "https://job-application-tracker-seven-beta.vercel.app",
+    git: "https://github.com/8BitJustin/job-application-tracker",
     icon: "📋",
   },
   {
     title: "AZ-104 Exam Prep Tool",
     tech: ["React", "Vercel", "Anthropic API"],
-    desc: "A custom Azure Administrator study application with practice exams, topic drilling, and live lab scenario walkthroughs. Built to supplement the Scott Duffy Udemy course with hands-on reinforcement.",
+    desc: "Built alongside active AZ-104 certification study to reinforce concepts beyond passive video watching. Generates practice questions by topic area, tracks weak areas over time, and simulates exam-style scenario questions using the Anthropic API. Designed to complement the Scott Duffy Udemy course with active recall rather than passive review. Deployed on Vercel and used daily during prep.",
     link: "https://az104-exam-prep.vercel.app",
+    git: "https://github.com/8BitJustin/az104-exam-prep",
     icon: "☁️",
   },
   {
     title: "AZ-104 Lab Environment",
     tech: ["React", "Vercel", "Azure"],
-    desc: "An interactive lab companion for Azure Administrator study, tracking progress through live Azure trial exercises paired with real-world portal practice.",
+    desc: "A structured lab tracker built to accompany hands-on work in a live Azure trial environment. Maps exercises to AZ-104 exam objectives, tracks completion by topic, and surfaces what still needs work. Built because the gap between watching a demo and actually executing it in the portal is where most exam failures happen, and this closes that gap with deliberate, logged practice.",
     link: "https://az104-labs.vercel.app",
+    git: "https://github.com/8BitJustin/az104-labs",
     icon: "🧪",
   },
   {
     title: "BDSR Automation (RSC-P)",
     tech: ["Python", "Rubrik RSC-P", "ServiceNow"],
-    desc: "Automated the daily Backup Data Status Report workflow for Pratt & Whitney environments using Rubrik RSC-P. Eliminated manual report generation and distributed results automatically to team members.",
+    desc: "Identified a daily manual process where backup status reports for Pratt & Whitney environments required hand-pulling data, formatting, and distributing to the team — adding unnecessary overhead to the morning workflow. Built an automated solution using Rubrik RSC-P that queries the targeted clusters and SLA domains, compiles results, and distributes the report to designated team members automatically. Eliminated the manual process entirely and ensured consistent visibility into backup health across environments.",
     link: null,
+    git: null,
     icon: "⚙️",
   },
   {
@@ -112,6 +116,7 @@ const PROJECTS = [
     tech: ["Hardware", "Physical Infrastructure", "Process Improvement"],
     desc: "Built and implemented a dedicated imaging rack after identifying decentralized laptop reimaging across multiple cubicles. Proposed solution to management, sourced shelving from warehouse, and constructed a structured 5-shelf station capable of handling 10–12 laptops simultaneously. Standardized cabling by measuring and terminating Ethernet runs to eliminate clutter, improving workspace organization, freeing up a desk, and enabling onboarding of an additional technician.",
     link: null,
+    git: null,
     icon: "🖥️",
   },
 ];
@@ -673,9 +678,14 @@ export default function Portfolio() {
               <div className="project-desc">{p.desc}</div>
               <div>{p.tech.map(t => <span key={t} className="tech-tag">{t}</span>)}</div>
               {p.link ? (
-                <a className="project-link" href={p.link} target="_blank" rel="noreferrer">View Live →</a>
+                <a className="project-link" href={p.link} target="_blank" rel="noreferrer">View Live →</a>                
               ) : (
                 <span style={{ fontFamily: "'Roboto', sans-serif", fontSize: 12, color: "#3a4049", fontStyle: "italic" }}>Production / Physical Project</span>
+              )}
+              {p.git ? (
+                <a className="project-link" href={p.git} target="_blank" rel="noreferrer">View Github →</a>                
+              ) : (
+                <span style={{ fontFamily: "'Roboto', sans-serif", fontSize: 12, color: "#3a4049", fontStyle: "italic" }}></span>
               )}
             </div>
           ))}
