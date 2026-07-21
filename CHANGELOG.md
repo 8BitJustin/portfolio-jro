@@ -5,6 +5,21 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
+## [3.0.0] - 2026-07-20
+
+### Added
+- ExperienceCard accordion component — each role collapses to a summary bar
+  and expands to show full narrative, Technologies, and Highlights
+- System Administrator role fully populated with detailed narrative,
+  technology stack, and highlights
+- Placeholder narrative for Service Delivery Manager, Rubrik Administrator,
+  Deskside Support Technician, and QA Automation Engineer (to be updated)
+
+### Changed
+- Experience section rebuilt from flat bullet list to accordion card layout
+- Expanded content structure: each role now supports multi-paragraph narrative,
+  tech stack tags, and highlight bullets independently
+
 ## [2.0.7] - 2026-06-08
 
 ### Added
