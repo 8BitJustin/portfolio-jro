@@ -216,7 +216,7 @@ function ExperienceCard({ job }) {
           <div style={{ fontFamily: "'Roboto', sans-serif", fontSize: 13, color: "#4AB3E8", display: "flex", alignItems: "center", gap: 10, flexWrap: "wrap" }}>
             <span>{job.company}</span>
             <span style={{ color: "#252a30" }}>|</span>
-            <span style={{ color: "#8892a0"}}>{job.period}</span>
+            <span style={{ color: "#8892a0" }}>{job.period}</span>
           </div>
           {!open && (
             <div style={{ fontFamily: "'Roboto', sans-serif", fontSize: 13, fontWeight: 300, color: "#8892a0", marginTop: 8, lineHeight: 1.5 }}>{job.summary}</div>
@@ -390,7 +390,7 @@ export default function Portfolio() {
         <h1 className="fade-up fade-up-2" style={{ fontFamily: "'Roboto', sans-serif", fontSize: "clamp(44px, 7vw, 76px)", fontWeight: 900, lineHeight: 1.0, letterSpacing: "-0.02em", color: "#E8EAF0", marginBottom: 28 }}>
           Justin<br /><span style={{ color: "#4AB3E8" }}>Olson.</span>
         </h1>
-        <p className="fade-up fade-up-3" style={{ fontFamily: "'Roboto', sans-serif", fontSize: 18, fontWeight: 300, color: "#8892a0", lineHeight: 1.75, maxWidth: 620, marginBottom: 40 }}>
+        <p className="fade-up fade-up-3" style={{ fontFamily: "'Roboto', sans-serif", fontSize: 18, fontWeight: 300, color: "#8892a0", lineHeight: 1.75, maxWidth: 620, marginBottom: 40, textAlign: "center", margin: "0 auto 40px" }}>
           U.S. Air Force veteran turned IT professional. I build reliable data protection operations — managing Rubrik environments, automating reporting pipelines, and leading incident response across enterprise infrastructure. Five certifications in 15 months, with more in progress. Focused on transitioning into cybersecurity and data protection engineering.
         </p>
         <div className="fade-up fade-up-4 hero-btns" style={{ display: "flex", gap: 14, flexWrap: "wrap", justifyContent: "center" }}>
