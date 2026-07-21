@@ -244,7 +244,7 @@ function ExperienceCard({ job }) {
               }}>{para}</p>
             ))}
           </div>
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))", gap: 32 }}>
+          <div style={{ display: "flex", flexDirection: "column", gap: 28 }}>
             <div>
               <div style={{ fontFamily: "'Roboto', sans-serif", fontSize: 11, fontWeight: 700, letterSpacing: "0.15em", textTransform: "uppercase", color: "#4AB3E8", marginBottom: 14 }}>Technologies</div>
               <div>{job.technologies.map(t => (
@@ -288,7 +288,7 @@ export default function Portfolio() {
 
         .section { padding: 90px 40px; max-width: 1000px; margin: 0 auto; }
         .section-title { font-family: 'Roboto', sans-serif; font-size: clamp(28px, 4vw, 40px); font-weight: 700; color: #E8EAF0; line-height: 1.1; margin-bottom: 12px; }
-        .section-sub { font-family: 'Roboto', sans-serif; font-size: 16px; font-weight: 300; color: #8892a0; line-height: 1.7; max-width: 620px; margin-bottom: 48px; }
+        .section-sub { font-family: 'Roboto', sans-serif; font-size: 16px; font-weight: 300; color: #8892a0; line-height: 1.7; max-width: 620px; margin: 0 auto 48px; text-align: center; }
         .section-title-line { width: 40px; height: 3px; background: #4AB3E8; border-radius: 2px; margin-bottom: 28px; }
 
         .skill-card { background: #1a1d21; border: 1px solid #252a30; border-radius: 12px; padding: 26px; transition: border-color 0.2s, transform 0.2s; }
