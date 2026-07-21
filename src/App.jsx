@@ -17,19 +17,18 @@ const EXPERIENCE = [
     period: "November 2025 – Present",
     summary: "Enterprise backup operations and infrastructure support across Raytheon Technologies and Pratt & Whitney environments.",
     narrative: [
-      "Support enterprise backup infrastructure for Raytheon Technologies and Pratt & Whitney by managing operational health, onboarding new environments, and ensuring reliable protection of production systems across geographically distributed locations.",
-      "Responsibilities span the full operational lifecycle of enterprise backup services, including monitoring backup success, troubleshooting failures, validating restores, coordinating infrastructure changes, maintaining technical documentation, and supporting migrations from legacy backup platforms into Rubrik.",
-      "Beyond day-to-day operations, I focus heavily on improving team efficiency through standardized documentation, reusable operational templates, reporting improvements, and process refinement. I regularly coordinate with virtualization, Windows, networking, storage, engineering, and customer teams to ensure successful deployments and long-term operational stability.",
+      "Support enterprise backup infrastructure for Raytheon Technologies and Pratt & Whitney by managing operational health, onboarding new environments, and ensuring reliable protection of production systems across geographically distributed enterprise environments. Responsibilities span the full operational lifecycle of enterprise backup services, from onboarding new production environments through ongoing operational support, backup validation, infrastructure change coordination, documentation, and production handoffs. Regularly investigate backup failures, validate recoverability through test restores, and ensure backup integrity across critical business systems. In addition to daily operations, I continuously improve team efficiency through standardized documentation, reusable operational templates, reporting enhancements, and process improvements. I regularly collaborate with virtualization, Windows, storage, networking, engineering, and customer teams to support enterprise migrations, maintain operational stability, and improve long-term service reliability. I was also selected to provide temporary on-site operational coverage for an enterprise data center, supporting production infrastructure activities and vendor coordination during a live deployment.",
     ],
-    technologies: ["Rubrik CDM", "Rubrik Security Cloud", "VMware vCenter", "VMware vSphere", "ServiceNow", "PuTTY / SSH", "Microsoft 365", "Windows Server"],
+    technologies: ["Rubrik CDM", "Rubrik Security Cloud (RSC)", "VMware vCenter", "VMware vSphere", "ServiceNow", "PuTTY / SSH", "Microsoft 365", "Powershell", "CMDB", "Enterprise Backup & Recovery"],
     highlights: [
-      "Managed onboarding of multiple enterprise backup environments from planning through production handoff.",
-      "Maintained backup health across RTX and Pratt & Whitney environments through daily monitoring and issue remediation.",
-      "Created and maintained Technical Service Documentation (TSD) and CMDB records supporting long-term operational continuity.",
-      "Coordinated ServiceNow change requests for infrastructure updates, agent installations, and production changes.",
-      "Validated backup integrity through test restores, replication monitoring, and snapshot verification.",
-      "Helped standardize operational processes through documentation, reusable templates, and reporting improvements.",
-      "Collaborated with engineering and infrastructure teams to migrate production workloads from legacy backup platforms into Rubrik.",
+      "Successfully onboarded multiple enterprise environments into Rubrik by coordinating SLA creation, backup validation, Technical Service Documentation (TSD), CMDB updates, and production handoffs.",
+      "Maintained operational health across Raytheon Technologies and Pratt & Whitney environments by proactively investigating and resolving replication, snapshot, virtualization, VSS, and backup failures.",
+      "Executed backup validation through VM test restores, replication monitoring, snapshot verification, and post-change validation to ensure production recoverability.",
+      "Developed and maintained Technical Service Documentation (TSD), CMDB records, operational procedures, and knowledge base documentation supporting long-term service continuity.",
+      "Coordinated ServiceNow change requests for agent installations, ESXi host additions, infrastructure updates, server reboots, and production environment changes.",
+      "Improved team efficiency through standardized documentation, reusable operational templates, reporting enhancements, and continuous process improvement initiatives.",
+      "Selected to provide on-site operational coverage at an enterprise data center, coordinating vendor activities, supporting infrastructure operations, and serving as the primary on-site technical representative during scheduled engineering work.",
+      "Collaborated daily with virtualization, Windows, storage, networking, engineering, and customer teams to troubleshoot complex production issues and maintain enterprise backup reliability.",
     ],
   },
   {
@@ -235,6 +234,7 @@ function ExperienceCard({ job }) {
 
       {open && (
         <div style={{ borderTop: "1px solid #252a30", padding: "28px 28px 32px" }}>
+          <div style={{ fontFamily: "'Roboto', sans-serif", fontSize: 11, fontWeight: 700, letterSpacing: "0.15em", textTransform: "uppercase", color: "#4AB3E8", marginBottom: 14 }}>Summary</div>
           <div style={{ marginBottom: 32 }}>
             {job.narrative.map((para, i) => (
               <p key={i} style={{
