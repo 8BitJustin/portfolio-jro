@@ -528,7 +528,7 @@ export default function Portfolio() {
           </div>
         </div>
         <div style={{ display: "flex", justifyContent: "center" }}>
-          <a className="btn-primary" href="/resume.pdf" download="Justin_Olson_Resume.pdf" style={{ textDecoration: "none" }}>Download Resume ↓</a>
+          <a className="btn-primary" href="/JRO-07232026.pdf" download="JRO-07232026.pdf" style={{ textDecoration: "none" }}>Download Resume ↓</a>
         </div>
         <p style={{ fontFamily: "'Roboto', sans-serif", fontSize: 13, color: "#3a4049", marginTop: 22, textAlign: "center" }}>References available upon request.</p>
       </section>
