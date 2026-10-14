@@ -12,9 +12,28 @@ const NAV_LINKS = [
 
 const EXPERIENCE = [
   {
+    title: "Senior System Administrator",
+    company: "VSO — Raytheon Technologies / Pratt & Whitney / Kyndryl",
+    period: "October 2026 – Present",
+    summary: "Acting coverage for the Landscape Management Team, leading ERP Landscape meetings and RHEL/Oracle patching maintenance windows across enterprise environments.",
+    narrative: [
+      "Stepped into the Senior System Administrator role on the Landscape Management Team (LMT) to provide coverage while a team member is on leave. LMT is responsible for ensuring system health and operational readiness across enterprise Linux and ERP environments supporting Raytheon Technologies, Pratt & Whitney, and Kyndryl.",
+      "Within the first two weeks, took on two primary ownership areas: leading the weekly ERP Landscape meeting and assuming responsibility for monthly RHEL and Oracle patching maintenance windows. Both responsibilities were previously owned by an experienced team member and required rapid onboarding to processes, tooling, and stakeholder expectations.",
+      "The ERP Landscape meeting is a cross-functional standup attended by over a dozen department leads. Responsibilities include collecting slide submissions from each team, assembling and organizing a 70+ slide deck, and facilitating the meeting. The first solo run received direct positive feedback from attendees. The RHEL/Oracle patching maintenance windows are monthly overnight deployments coordinating shutdowns, patching, startups, and verification across 40+ applications. Led the first 8-hour overnight window independently, directing multiple teams and application owners through the full deployment sequence.",
+    ],
+    technologies: ["RHEL (Red Hat Enterprise Linux)", "Oracle", "Microsoft Excel", "Microsoft PowerPoint", "Microsoft 365"],
+    highlights: [
+      "Assumed acting ownership of the weekly ERP Landscape meeting within first week — collecting slides from 12–15 teams, organizing a 70+ slide deck, and facilitating the cross-departmental meeting.",
+      "Led first solo ERP Landscape meeting and received unsolicited positive feedback from multiple attendees.",
+      "Took over monthly RHEL and Oracle patching maintenance window responsibilities from departing team member with minimal transition time.",
+      "Led first 8-hour overnight production maintenance window, coordinating shutdowns, patching, startups, and verification across 40+ applications for RTX, Pratt & Whitney, and Kyndryl environments.",
+      "Maintained pre-deployment Excel tracking sheets confirming server scope, scheduling, and readiness for each patching cycle.",
+    ],
+  },
+  {
     title: "System Administrator",
     company: "VSO — Raytheon Technologies / Pratt & Whitney",
-    period: "November 2025 – Present",
+    period: "November 2025 – October 2026",
     summary: "Enterprise backup operations and infrastructure support across Raytheon Technologies and Pratt & Whitney environments.",
     narrative: [
       "Support enterprise backup infrastructure for Raytheon Technologies and Pratt & Whitney by managing operational health, onboarding new environments, and ensuring reliable protection of production systems across geographically distributed enterprise environments.",
@@ -391,14 +410,14 @@ export default function Portfolio() {
         <div className="fade-up fade-up-1" style={{ marginBottom: 18 }}>
           <span style={{ fontFamily: "'Roboto', sans-serif", fontSize: 12, letterSpacing: "0.2em", textTransform: "uppercase", color: "#4AB3E8", display: "inline-flex", alignItems: "center", gap: 10 }}>
             <span style={{ width: 24, height: 1, background: "#4AB3E8", display: "inline-block" }}></span>
-            Systems Administrator · Data Protection Specialist
+            Senior Systems Administrator · Data Protection & Infrastructure
           </span>
         </div>
         <h1 className="fade-up fade-up-2" style={{ fontFamily: "'Roboto', sans-serif", fontSize: "clamp(44px, 7vw, 76px)", fontWeight: 900, lineHeight: 1.0, letterSpacing: "-0.02em", color: "#E8EAF0", marginBottom: 28 }}>
           Justin<br /><span style={{ color: "#4AB3E8" }}>Olson.</span>
         </h1>
         <p className="fade-up fade-up-3" style={{ fontFamily: "'Roboto', sans-serif", fontSize: 18, fontWeight: 300, color: "#8892a0", lineHeight: 1.75, maxWidth: 620, marginBottom: 40, textAlign: "center", margin: "0 auto 40px" }}>
-          U.S. Air Force veteran turned IT professional. I build reliable data protection operations — managing Rubrik environments, automating reporting pipelines, and leading incident response across enterprise infrastructure. Five certifications in 15 months, with more in progress. Focused on transitioning into cybersecurity and data protection engineering.
+          U.S. Air Force veteran turned IT professional. Senior Systems Administrator with hands-on experience across enterprise backup operations, Linux infrastructure, ERP landscape management, and large-scale patching deployments. Five certifications in 15 months, with more in progress. Focused on growing into cybersecurity and data protection engineering.
         </p>
         <div className="fade-up fade-up-4 hero-btns" style={{ display: "flex", gap: 14, flexWrap: "wrap", justifyContent: "center" }}>
           <button className="btn-primary" onClick={() => scrollTo("experience")}>View Experience →</button>
